@@ -1,0 +1,120 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #343a40;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header nav a {
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #28a745; /* Bootstrap's success color */
+}
+
+header .search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+header .cart-icon i {
+    margin-right: 5px;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.header .cart-icon {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.hero {
+    position: relative;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1, .hero p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.main-section .hero {
+    background-blend-mode: multiply; /* Darkens the image for better text contrast */
+}
+
+.main-section .product {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-section .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.main-section .price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.featured-products .product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cart-item img {
+    max-width: 100px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+footer a {
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #28a745; /* Bootstrap's success color */
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+

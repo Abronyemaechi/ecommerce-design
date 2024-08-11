@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">My Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>                
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-2">
+        <h2>Checkout</h2>
+        <div class="row">
+            <div class="col-md-7">
+                <form id="checkout-form">
+                    <h4>Billing Information</h4>
+                    <div class="form-group">
+                        <label for="billing-name">Name</label>
+                        <input type="text" id="billing-name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="billing-address">Address</label>
+                        <input type="text" id="billing-address" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="billing-email">Email</label>
+                        <input type="email" id="billing-email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="billing-phone">Phone Number</label>
+                        <input type="tel" id="billing-phone" class="form-control" required>
+                    </div>
+
+                    <h4>Shipping Information</h4>
+                    <div class="form-group">
+                        <label for="shipping-address">Shipping Address</label>
+                        <input type="text" id="shipping-address" class="form-control" required>
+                    </div>
+
+                    <h4>Payment Information</h4>
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method" class="form-control" required>
+                            <option value="debit-card">Dedit Card</option>
+                            <option value="palmpay">PalmPay</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-expiry">Expiry Date</label>
+                        <input type="text" id="card-expiry" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-cvc">CVC</label>
+                        <input type="text" id="card-cvc" class="form-control" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-4">Place Order</button>
+                </form>
+            </div>
+            <div class="col-md-5">
+                <h4>Order Summary</h4>
+                <div id="order-summary">
+                    <!-- Order summary will be dynamically inserted here -->
+                </div>
+                <h4 class="mt-4">Total: ₦<span id="order-total">0.00</span></h4>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-center mt-4 p-3">
+        <p>&copy; 2024 Maxible. All rights reserved.</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
